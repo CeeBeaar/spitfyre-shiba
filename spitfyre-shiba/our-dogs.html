@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Dogs</title>
+    <link rel="shortcut icon" href="favicon/favicon64.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/our-dogs.css"/>
+</head>
+<body>
+<div class="wrapper"><!-- START OF WRAPPER -->
+    <h1><img src="images/shiba-logo-updated-01.png" height="67px" width="66px" alt="Shiba Logo"> Spitfyre Shiba Inu</h1>
+    <nav>
+        <a href="index.html"><button class="home">Home</button></a>
+        <a href="available.html"><button class="available">Available Pups</button></a>
+        <a href="adoption.html"><button class="adoption">Adoption Process</button></a>
+        <a href="our-dogs.html"><button class="dogs">Our Dogs</button></a>
+        <a href="faq.html"><button class="faq">FAQ</button></a>
+        <a href="info.html"><button class="info">Shiba Info</button></a>
+    </nav>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="gracie/gracie1.jpg" height="600" width="900" style="width:100%">
+            <div class="text">Gracie</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="autymn/autymn2.jpg" height="600" width="900" style="width:100%">
+            <div class="text">Autymn</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="frost/frost3.jpg" height="600" width="900" style="width:100%">
+            <div class="text">Frost</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="snowball/snowball2.jpg" height="600" width="900" style="width:100%">
+            <div class="text">Snowball</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="cubby/cubby2.jpg" height="600" width="900" style="width:100%">
+            <div class="text">Cubby</div>
+        </div>
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <h2>About our Puppies</h2>
+    <p>
+        I have an excellent history of health in my Shiba Inu. All my Shiba Inu are up to date in vaccinations and de-wormings.
+        Vaccinations are done at 5, 7, 9 and 12 weeks of age. Top of the line vaccines are used and no corners are cut to give optimum coverage.
+        Pups will come with an extensive health record to be taken to the new veterinarian for future care. I have received many compliments from buyers'
+        veterinarians for my records and health care. My health care program saves buyers a lot of time and money!!<br><br>
+        Every Shiba Inu puppy is raised lovingly with my children from birth which produces a much more sound and gentle temperament
+        resulting in a much better family companion right from the start. This shows in the puppies we raise, as well as the resulting adult Shiba Inu.
+        We do not believe in sacrificing anything in the process. Our days are spent interacting with our Shiba Inu, grooming, walking and playing
+        (or even napping) I know the key to a rich relationship with any Shiba Inu  is very dependent on good breeding and socialization.
+        Every Shiba Inu is bred for excellent conformation, health, and temperament to become the best family companion available.
+        In hopes that they will meet every expectation you have of them. When our puppies leave our care, they are HAPPY, HEALTHY,
+        WELL-SOCIALIZED, and have had LOTS OF T.L.C.!It is our goal that they stay that way. Anything less just isn't good enough for our wonderful puppies!!<br><br>
+        You are always welcome to pick up your new Shiba Inu Puppy here in Akeley, Minnesota, Come in, have a can of pop or a cup of coffee,
+        and visit with us a while. We'd love to meet you, and show off our puppies! If you live far away, we can bring your new puppy to meet you
+        as far as 60 miles from Akeley, MN, or we can offer safe shipping to you via the airlines, weather permitting.<br><br>
+        We will require a deposit to hold your new Shiba Inu puppy, by 7 weeks of age, the remaining balance is due in full.
+        At 8 weeks of age, your puppy will be ready for pickup. Shipping charges must be paid prior to shipment.<br><br>
+        Deposits are non-refundable.
+    </p>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <footer>
+        <strong>Contact info:</strong><br>
+        Phone: (218) 652-4141<br>
+        Email: <a href="mailto:scout@eot.com"> pinek@digitaljam.com</a><br>
+        <a href="https://www.facebook.com/SpitfyreShiba/?view_public_for=394241331091851" target="_blank"><img src="images/facebook.png" alt="Facebook logo" height="25px" width="25px" class="facebook"></a>
+        <a href="https://www.youtube.com/user/SpitfyreShiba" target="_blank"><img src="images/youtube.png" alt="Youtube logo" height="25px" width="25px" class="youtube"></a>
+    </footer>
+</div><!-- END OF WRAPPER -->
+</body>
+</html>

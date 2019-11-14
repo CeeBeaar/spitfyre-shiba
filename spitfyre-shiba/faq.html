@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <link rel="shortcut icon" href="favicon/favicon64.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/faq.css"/>
+</head>
+<body>
+<div class="wrapper"><!-- START OF WRAPPER -->
+    <h1><img src="images/shiba-logo-updated-01.png" height="67px" width="66px" alt="Shiba Logo"> Spitfyre Shiba Inu</h1>
+    <nav>
+        <a href="index.html"><button class="home">Home</button></a>
+        <a href="available.html"><button class="available">Available Pups</button></a>
+        <a href="adoption.html"><button class="adoption">Adoption Process</button></a>
+        <a href="our-dogs.html"><button class="dogs">Our Dogs</button></a>
+        <a href="faq.html"><button class="faq">FAQ</button></a>
+        <a href="info.html"><button class="info">Shiba Info</button></a>
+    </nav>
+    <button class="accordion">Are the puppies registered?</button>
+    <div class="panel">
+        <p>All Parents are AKC registered and all litters are registered with the AKC.<br>
+            Pets will come with limited AKC registration and Breeding/show prospects will come with Full AKC registration.
+            You can call your puppy any name you choose, but all Breeding/Show/Obedience/Agility prospects will have there registered name begin with our kennel name.</p>
+    </div>
+
+    <button class="accordion">What age do puppies go to their new homes?</button>
+    <div class="panel">
+        <p>8 weeks of age, Puppies we decide to keep for a while to further evaluate for show/breeding may become available later.</p>
+    </div>
+
+    <button class="accordion">Have the puppies received any vaccinations?</button>
+    <div class="panel">
+        <p>The puppies are vaccinated and wormed three times before they go to their new homes. We provide a health record and a recommended shot schedule for future vaccinations,
+            worming, neutering/spaying. All puppies receive the following vaccinations at the following ages. Just look at the age of the puppy your interested in and you will see
+            what they have had for vaccinations.<br>
+            <strong>5 weeks:</strong> Nobivac DPv Strongid-T De-worming<br>
+            <strong>7 weeks:</strong> Nobivac Canine 1-DAPPv Panacure De-worming<br>
+            <strong>9 weeks:</strong> Nobivac Canine 1-DAPPv- Strongid-T De-worming<br>
+            <strong>12 weeks:</strong> Nobivac Canine 1-DAPPv- Panacure De-worming<br><br>
+            <strong>What is DAPPv? -</strong> Canine Infectious Distemper, Hepatitis, Adenovirus, Parainfluenza, Parvovirus
+        </p>
+    </div>
+    <button class="accordion">Can I look at puppies before 7 weeks of age?</button>
+    <div class="panel">
+        <p>NO, Doing just that is one of the primary methods disease is spread from one litter to another. You can carry it on your hands,
+            shoes or clothes. This may sound extreme, but I always ask people to take a shower and wear clean clothes and shoes when they come to my house.
+            However I do keep updated pics (and occasionally video) on the website.</p>
+    </div>
+    <button class="accordion">Will you accept a deposit for "first choice" in a litter?</button>
+    <div class="panel">
+        <p>Yes, I take deposits down for the 1st and 2nd choice of males and females (after us of course). If what you requested isn't in the litter,
+            you can wait for the next litter, or you may have first choice of the available puppies.</p>
+    </div>
+    <button class="accordion">Do you keep a "waiting list"?</button>
+    <div class="panel">
+        <p>I receive dozens of inquiries on a weekly basis. It's very difficult to determine who's serious and who's just looking for information from a variety of breeders.
+            Because of this, I will only contact those who are on our VIP list and submitted deposits.</p>
+    </div>
+    <button class="accordion">Would you take back a dog if I could no longer keep the dog for whatever reason?</button>
+    <div class="panel">
+        <p>OF COURSE!!! One of the items on our sales contract is regarding returns and you must notify us first. Any puppy produced by us is always welcome to come back.
+            We have had some puppies come back due to family crisis, illnesses, unplanned events etc. We keep them until we can place them in new homes. We love our puppies
+            and have the belief that because we created them we are responsible for their well being the entirety of their life.</p>
+    </div>
+    <button class="accordion">What defects are your puppies examined for?</button>
+    <div class="panel">
+        <p>All of our puppies are checked for conformation defects at birth and when leaving for their new home. If any are
+            found they are noted on sales contract. The majority of hereditary diseases are not detectable when a puppy is under
+            1 year of age. We do offer a lifetime health guarantee against hereditary and congenital diseases and defects.</p>
+    </div>
+<!-- JAVA SCRIPT -->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+<!-- END OF JAVA -->
+    <footer>
+        <strong>Contact info:</strong><br>
+        Phone: (218) 652-4141<br>
+        Email: <a href="mailto:scout@eot.com"> pinek@digitaljam.com</a><br>
+        <a href="https://www.facebook.com/SpitfyreShiba/?view_public_for=394241331091851" target="_blank"><img src="images/facebook.png" alt="Facebook logo" height="25px" width="25px" class="facebook"></a>
+        <a href="https://www.youtube.com/user/SpitfyreShiba" target="_blank"><img src="images/youtube.png" alt="Youtube logo" height="25px" width="25px" class="youtube"></a>
+    </footer>
+</div><!-- END OF WRAPPER -->
+</body>
+</html>
